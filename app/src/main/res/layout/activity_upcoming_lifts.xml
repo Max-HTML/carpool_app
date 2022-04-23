@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyLifts">
+
+    <TextView
+        android:id="@+id/upcomingLiftsText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#F44336"
+        android:text="UPCOMING LIFTS"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logoutBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#F44336"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/addLiftBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingLiftsText" />
+
+    <Button
+        android:id="@+id/addLiftBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#F44336"
+        android:text="Filter"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logoutBtn3"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingLiftsText" />
+
+    <TextView
+        android:id="@+id/upcomingLiftsBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="#617A7A7A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addLiftBtn" />
+
+    <TextView
+        android:id="@+id/exampleLift1Box"
+        android:layout_width="0dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/upcomingLiftsBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/upcomingLiftsBox"
+        app:layout_constraintTop_toTopOf="@+id/upcomingLiftsBox" />
+
+    <TextView
+        android:id="@+id/upcomingLiftName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Name"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/upcomingLiftsBox"
+        app:layout_constraintStart_toStartOf="@+id/upcomingLiftsBox"
+        app:layout_constraintTop_toTopOf="@+id/exampleLift1Box" />
+
+    <TextView
+        android:id="@+id/upcomingLiftFL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="From Location"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/exampleLift1Box"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingLiftName1" />
+
+    <TextView
+        android:id="@+id/upcomingLiftDest1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Destination"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/exampleLift1Box"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingLiftName1" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="to"
+        app:layout_constraintEnd_toEndOf="@+id/upcomingLiftsBox"
+        app:layout_constraintStart_toStartOf="@+id/upcomingLiftsBox"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingLiftName1" />
+
+    <TextView
+        android:id="@+id/upcomingLiftDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Date"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/exampleLift1Box"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/upcomingLiftTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Time"
+        app:layout_constraintEnd_toEndOf="@+id/exampleLift1Box"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingLiftDest1" />
+
+    <TextView
+        android:id="@+id/upcomingLiftPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Price"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/exampleLift1Box"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingLiftDate1" />
+
+    <TextView
+        android:id="@+id/upcomingLiftSeats1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Seats"
+        app:layout_constraintEnd_toEndOf="@+id/exampleLift1Box"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingLiftTime1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

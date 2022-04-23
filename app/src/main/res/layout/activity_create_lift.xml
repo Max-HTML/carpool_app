@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateLift">
+
+    <TextView
+        android:id="@+id/createLiftBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="#617A7A7A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/createLiftLiftNameInput"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Lift Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/createLiftBox"
+        app:layout_constraintStart_toStartOf="@+id/createLiftBox"
+        app:layout_constraintTop_toTopOf="@+id/createLiftBox" />
+
+    <EditText
+        android:id="@+id/createLiftFLInput"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="From Location"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/createLiftBox"
+        app:layout_constraintStart_toStartOf="@+id/createLiftBox"
+        app:layout_constraintTop_toBottomOf="@+id/createLiftLiftNameInput" />
+
+    <EditText
+        android:id="@+id/createLiftDestInput"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Destination"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/createLiftBox"
+        app:layout_constraintStart_toStartOf="@+id/createLiftBox"
+        app:layout_constraintTop_toBottomOf="@+id/createLiftFLInput" />
+
+    <EditText
+        android:id="@+id/createLiftPriceInput"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/createLiftBox"
+        app:layout_constraintStart_toStartOf="@+id/createLiftBox"
+        app:layout_constraintTop_toBottomOf="@+id/createLiftDestInput" />
+
+    <EditText
+        android:id="@+id/createLiftSeatsInput"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Seats Available"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/createLiftBox"
+        app:layout_constraintStart_toStartOf="@+id/createLiftBox"
+        app:layout_constraintTop_toBottomOf="@+id/createLiftPriceInput" />
+
+    <EditText
+        android:id="@+id/createLiftDateInput"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/createLiftBox"
+        app:layout_constraintStart_toStartOf="@+id/createLiftBox"
+        app:layout_constraintTop_toBottomOf="@+id/createLiftSeatsInput" />
+
+    <EditText
+        android:id="@+id/createLiftTimeInput"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/createLiftBox"
+        app:layout_constraintStart_toStartOf="@+id/createLiftBox"
+        app:layout_constraintTop_toBottomOf="@+id/createLiftDateInput" />
+
+    <Button
+        android:id="@+id/addLiftBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-6dp"
+        android:backgroundTint="#F44336"
+        android:text="Add Lift"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/createLiftBox"
+        app:layout_constraintEnd_toEndOf="@+id/createLiftBox" />
+
+    <Button
+        android:id="@+id/addLiftCancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-6dp"
+        android:backgroundTint="#F44336"
+        android:text="X"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/createLiftBox"
+        app:layout_constraintStart_toStartOf="@+id/createLiftBox" />
+</androidx.constraintlayout.widget.ConstraintLayout>
